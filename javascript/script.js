@@ -20,9 +20,13 @@ tl.from(".img-container", {
     x:-20,
     opacity:0,
     duration:0.5,
-   
-    
+})
 
+tl.from(".button", {
+    y:-10,
+    opacity:0,
+    duration:2,
+    delay:0.8
 })
 
 // AOS
