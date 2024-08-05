@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    background-color: rgb(1, 1, 1);
+    color: white;
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.navElem {
+    /* background-color: red; */
+    margin-top: 2rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    margin: 0 1.8rem;
+}
+
+#navList ul{
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-right: 3rem;
+}
+
+#navList ul a{
+  text-decoration: none;
+}
+
+#navList ul a li{
+    padding: 1rem;
+    list-style: none;
+}
+
+
+.container{
+    /* background-color: beige; */
+    margin: 3rem;
+    height: 40vw;
+}
+
+.container > div {
+    margin-bottom: 4rem; 
+  }
+  
+ 
+  .container > div:last-child {
+    margin-bottom: 0;
+  }
+
+.img-container{
+    width: 14vw;
+    height: 14vw;
+    border: 2px solid gray;
+    border-radius: 50%;
+    box-shadow: -4px 2px 15px 5px rgba(151, 150, 150, 0.5);
+    overflow: hidden;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.about {
+    
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin: 0 2.8rem;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.about .heading h2{
+    font-size: 24px;
+}
+
+.intro p{
+    font-size: 20px;
+    padding: 8px 6px;
+    /* transition:  2s ease-in-out; */
+}
+
+.button {
+    /* background-color: aliceblue; */
+    width: 15%; /* Set to less than 100% */
+    margin: 0 auto; /* This will center the div horizontally */
+  }
+
+  /* The margin: auto; property is typically used to center block-level elements (like divs) horizontally within their container. However, for margin: auto; to work for centering, two conditions need to be met:
+
+1.The element must have a defined width less than 100%.
+2.The parent container should have a width and not take the full width of the screen.
+In your case, you've set width: 100%; for the .button div, which makes it take up the entire width of its parent container. Since it already occupies the full width, there is no additional space on either side to distribute evenly, which is why margin: auto; isn't visibly centering the div.
+
+How to Center the .button Div:
+1. Centering the Div Horizontally:
+If you want to center the .button div within its container, you can adjust the width to be less than 100%: */
+
+.button .btn{
+    padding: 1rem 2rem;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: black;
+}
+
+.button .btn:hover{
+    
+    background-color: rgba(0, 217, 255, 0.338);
+    color: black;
+}
+
+/* .projectHeading{
+  display: block;
+} */
+
+.projectDesc .projectHeading{
+    /* background-color: yellow; */
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+}
+.projects{
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space out the divs evenly */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.lamp{
+   
+    height: 15vw;
+    flex-grow: 2;
+    flex: 1 1 30%;/*Takes up 30% of the row */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    margin-bottom: 20px;
+    background-color: aliceblue;
+
+    background-color: #121213;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%234d3737' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
+  
+}
+
+.lamp:not(:nth-child(3n)) {
+    margin-right: 5%;
+  }
+
+  .projects .heading{
+    margin-bottom: 4rem;
+  }
+
+
