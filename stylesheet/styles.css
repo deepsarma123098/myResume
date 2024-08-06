@@ -185,3 +185,16 @@ textarea{
     display: flex;
     gap: 2rem;
 }
+
+.formElem form{
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.formElem form input, textarea{
+   padding: 1rem 2rem;
+   width: 50vw;
+   border: 2px solid rgb(66, 65, 65);
+   border-radius: 1vw;
+}
