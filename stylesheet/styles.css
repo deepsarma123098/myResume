@@ -128,21 +128,30 @@ If you want to center the .button div within its container, you can adjust the w
     color: black;
 }
 
-/* .projectHeading{
-  display: block;
-} */
+.projectDesc{
+ background-color: #E5E5E5;
+}
 
 .projectDesc .projectHeading{
     /* background-color: yellow; */
+    background-color: #E5E5E5;
     padding: 1rem 2rem;
     margin: 2rem 0;
 }
+
+.projectDesc .projectHeading h1{
+background-color: #E5E5E5;
+color:#2C2933; 
+text-align: center;
+margin: 0.5rem 0;
+}
+
 .projects{
-  /* background-color: red; */
+  background-color: #E5E5E5;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* Space out the divs evenly */
-  max-width: 1000px;
+  max-width: 80vw;
   margin: 0 auto;
 }
 
@@ -153,12 +162,21 @@ If you want to center the .button div within its container, you can adjust the w
     flex: 1 1 30%;/*Takes up 30% of the row */
     box-sizing: border-box; /* Ensures padding and border are included in the width */
     margin-bottom: 20px;
-    background-color: aliceblue;
+    background-color: #FFFFFF;
+    border-radius: 35px;
+    overflow: hidden;
+    padding: 2rem;
+
+}
+
+.lamp:hover{
+    cursor: pointer;
+    border: 2px solide gray;
+    box-shadow: -2px 4px 5px 5px rgba(151, 150, 150, 0.5);;
 }
 
 /* .lamp .style{
-    background-color: #111011;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='16' viewBox='0 0 20 16'%3E%3Cg fill='%23946868' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 .04C2.6.22 4.99 1.1 7 2.5A13.94 13.94 0 0 1 15 0h4c.34 0 .67.01 1 .04v2A12 12 0 0 0 7.17 12h5.12A7 7 0 0 1 20 7.07V14a5 5 0 0 0-3-4.58A5 5 0 0 0 14 14H0V7.07c.86.12 1.67.4 2.4.81.75-1.52 1.76-2.9 2.98-4.05C3.79 2.83 1.96 2.2 0 2.04v-2z'/%3E%3C/g%3E%3C/svg%3E");
+    
 } */
 
 .lamp:not(:nth-child(3n)) {
@@ -175,6 +193,15 @@ If you want to center the .button div within its container, you can adjust the w
 
 .lamp a h3{
     cursor: pointer;
+    margin:0.7rem 0;
+    color: #F95911;
+    background-color:#FFFFFF ;
+}
+
+.lamp p{
+    background-color: #FFFFFF;
+    /* background-color: red; */
+    color: #2C2933;;
 }
 textarea{
     resize: none;
@@ -184,6 +211,18 @@ textarea{
     padding: 5rem 3rem;;
     display: flex;
     gap: 2rem;
+}
+
+
+.forms{
+    margin: 5rem 3rem;
+}
+.forms>div{
+    margin-bottom: 3rem;
+}
+
+.forms>div:last-child{
+    margin-bottom: 1rem;
 }
 
 .formElem form{
@@ -198,3 +237,4 @@ textarea{
    border: 2px solid rgb(66, 65, 65);
    border-radius: 1vw;
 }
+
