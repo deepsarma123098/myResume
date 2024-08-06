@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheet/styles.css">
     <link rel="stylesheet" href="/stylesheet/lightStyle.scss">
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
    
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -105,16 +108,16 @@
 
           <div class="projects">
 
-            <div class="lamp"  data-aos="flip-up">
+            <div class="lamp item-1"  data-aos="flip-up">
                 <a href="https://github.com/deepsarma123098/lampProject" target="_blank"><h3>Lamp Project</h3></a>
                 <p> It is an interactive website I developed using HTML, CSS, and JavaScript. The site features a unique light switch mechanism that allows users to simulate turning a light on and off. It also includes a contact form for user inquiries and a dedicated page that provides detailed descriptions of various lighting types and their applications. </p>
             </div>
 
-            <div class="lamp"  data-aos="flip-up">
+            <div class="lamp item-2"  data-aos="flip-up">
                 <a href="https://github.com/deepsarma123098/resumeProject" target="_blank"><h3>Protfolio Clone</h3></a>
             </div>
 
-            <div class="lamp"  data-aos="flip-up">
+            <div class="lamp item-3"  data-aos="flip-up">
                 <a href="https://github.com/deepsarma123098/backend" target="_blank"><h3>Video Streaming App</h3></a>
                 <p> VidStream is a video-sharing platform backend developed
                     using Node.js, Express, and MongoDB. The application allows
@@ -126,11 +129,11 @@
                 <!-- <div class="style">Hello</div> -->
             </div>
 
-            <div class="lamp"  data-aos="flip-up">
+            <div class="lamp item-4"  data-aos="flip-up">
                 <a href="https://github.com/deepsarma123098/megaBlog" target="_blank"><h3>Mega Blog App</h3></a>
             </div>
 
-            <div class="lamp"  data-aos="flip-up">
+            <div class="lamp item-5"  data-aos="flip-up">
                 <a href="https://github.com/deepsarma123098/musicApp" target="_blank"><h3>Music App</h3></a>
             </div>
             
@@ -154,7 +157,7 @@
                     <label for="phone">Phone Number</label>
                     <input id="phone" type="tel" name="mobileNumber" value="" placeholder="Enter your phone name">
                     <label for="message">Your Message</label>
-                    <textarea id="message" rows="10" cols="100" maxlength="400"></textarea>
+                    <textarea id="message" rows="8" cols="100" maxlength="400"></textarea>
                 </form>
 
             </div>
@@ -166,11 +169,35 @@
         </div>
 
         <hr>
-        <footer class="foot">
-            <h2>LinkedIn</h2>
-            <h2>Facebook</h2>
-            <h2>Github</h2>
-        </footer>
+        
+
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    <div class="w-full max-w-screen-3xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024  All Rights Reserved.</span>
+
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Facebook</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Instagram</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">LinkedIn</a>
+                </li>
+                <!-- <li>
+                    <a href="#" class="hover:underline">Github</a>
+                </li> -->
+            </ul>
+        </div>
+        <!-- <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> -->
+      
+    </div>
+</footer>
+
+
 
     </div>
 

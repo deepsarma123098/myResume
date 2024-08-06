@@ -44,6 +44,10 @@ html,body{
     list-style: none;
 }
 
+.desc{
+    width: 100%;
+    height: 90vh;
+}
 
 .container{
     /* background-color: beige; */
@@ -130,6 +134,8 @@ If you want to center the .button div within its container, you can adjust the w
 
 .projectDesc{
  background-color: #E5E5E5;
+ width: 100%;
+ height: 113vh;
 }
 
 .projectDesc .projectHeading{
@@ -137,6 +143,8 @@ If you want to center the .button div within its container, you can adjust the w
     background-color: #E5E5E5;
     padding: 1rem 2rem;
     margin: 2rem 0;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .projectDesc .projectHeading h1{
@@ -175,6 +183,9 @@ margin: 0.5rem 0;
     box-shadow: -2px 4px 5px 5px rgba(151, 150, 150, 0.5);;
 }
 
+.projects>.item-4, .projects>.item-5{
+    margin-top: 4rem;
+}
 /* .lamp .style{
     
 } */
@@ -183,8 +194,9 @@ margin: 0.5rem 0;
     margin-right: 5%;
   }
 
+
   .projects .heading{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
 .lamp a{
@@ -195,10 +207,21 @@ margin: 0.5rem 0;
     cursor: pointer;
     margin:0.7rem 0;
     color: #F95911;
-    background-color:#FFFFFF ;
+    background-color:#FFFFFF;
+    font-size: 22px;
 }
 
+.lamp a h3:hover{
+    color: palevioletred;
+    font-weight: 900;
+}
+
+
 .lamp p{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* padding: 6px; */
     background-color: #FFFFFF;
     /* background-color: red; */
     color: #2C2933;;
@@ -207,18 +230,19 @@ textarea{
     resize: none;
 }
 
-.foot{
-    padding: 5rem 3rem;;
-    display: flex;
-    gap: 2rem;
+.contact h2{
+    margin-top: 1rem;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }
 
 
 .forms{
-    margin: 5rem 3rem;
+    margin: 3rem 3rem;
 }
 .forms>div{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .forms>div:last-child{
@@ -238,3 +262,8 @@ textarea{
    border-radius: 1vw;
 }
 
+.foot{
+    padding: 5rem 3rem;;
+    display: flex;
+    gap: 2rem;
+}
