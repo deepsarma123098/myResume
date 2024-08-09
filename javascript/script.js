@@ -52,6 +52,17 @@ document.querySelector('#myForm').addEventListener('submit', (e)=> {
 
     console.log("Form submoitted", formData);
 
+
+
+    emailjs.send('xxxx', 'yyyyyy', formData)
+    .then((response) => {
+        console.log('Email sent successfully:', response);
+    }, (error) => {
+        console.log('Failed to send email:', error);
+    });
+
+
+
    const form = document.querySelector('#myForm')
 
 // or

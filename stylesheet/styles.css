@@ -294,7 +294,7 @@ margin: 0.5rem 0;
 }
 
 textarea{
-    resize: none;
+    resize: none !important;
     padding: 1rem 2rem !important;
 }
 

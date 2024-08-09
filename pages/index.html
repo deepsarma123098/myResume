@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheet/styles.css">
-    <link rel="stylesheet" href="/stylesheet/lightStyle.scss">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheet/styles.css" />
+    <link rel="stylesheet" href="/stylesheet/lightStyle.scss" />
 
     <!-- TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-   
+
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- AnimateCSS -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <!-- CSS Shake -->
-  <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake-slow.min.css">
+    <!-- CSS Shake -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://csshake.surge.sh/csshake-slow.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="main">
-
-        <header class="navElem">
-
+      <header class="navElem">
         <!-- Navbar starts here -->
-            <nav class="navbar">
-                
-                <div class="heading">
-                    <a href="/"><h1>My Protfolio</h1></a>
-                </div>
+        <nav class="navbar">
+          <div class="heading">
+            <a href="/"><h1>My Protfolio</h1></a>
+          </div>
 
-                <div id="navList">
-                    <ul>
-                       <a href=""><li>Home</li></a>
-                       <a href=""><li>My Projects</li></a>
-                       <a href=""><li>Contact Me</li></a>
-                    </ul>
-                </div>
-
-            </nav>
+          <div id="navList">
+            <ul>
+              <a href=""><li>Home</li></a>
+              <a href=""><li>My Projects</li></a>
+              <a href=""><li>Contact Me</li></a>
+            </ul>
+          </div>
+        </nav>
         <!-- Navbar ends here -->
+      </header>
 
-        </header>
+      <section class="desc">
+        <div class="container">
+          <!-- Light Beam -->
 
-
-        <section class="desc">
-              
-            <div class="container">
-
-                <!-- Light Beam -->
-
-                <!-- <div class="wrapper">
+          <!-- <div class="wrapper">
 
                     <div class="lights-wrapper">
                       <div class="light light--1 js-light--1">
@@ -69,158 +65,297 @@
                     </div>
                   </div>
                    -->
-                 <!-- Image and About Section-->
-                <div class="img-container shake-slow">
-                    <img src="/images/img3.jpg" alt="Profile Photo"  >
-                </div>
-    
-                <div class="about">
-                    
-                    <div class="subHeading">
-                            <h2 class="animate__animated animate__flipInX animate__delay-2s">About Me</h2>
-                    </div>
-    
-                    <div class="intro">
-                        <p class="animate__animated animate__fadeInUpBig animate__delay-2s">I graduated with a degree in Instrumentation Engineering from Assam Engineering College. My career began at Assam Bio Refinery, where I served as an Executive in the Instrumentation department for 1 year and 7 months. During this time, I honed my skills in instrumentation and gained valuable experience in the bio-refinery sector.
-
-                            After that, I transitioned to Pride East Entertainment Pvt. Ltd., taking on the role of Project Coordinator. Over the course of 5 months, I managed various projects, further expanding my expertise in project management and coordination.
-                            
-                            Driven by a passion for technology and a desire for new challenges, I decided to switch to the IT field. I am now focused on building a career in tech, leveraging my engineering background and newly acquired skills in software development.</p>
-                    </div>
- 
-                </div>
-
-                <div class="button">
-                    <button class="btn"><a href="/docs/CV.pdf" download="CV.pdf" class="download-button">
-                        Download CV
-                      </a></button>
-                </div>
-                
-
-              </div>
-           
-            
-        </section>
-
-        <section class="projectDesc" >
-
-            <div class="projectHeading">
-                <h1>My Projects</h1>
-            </div>
-
-          <div class="projects">
-
-            <div class="lamp item-1"  data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150">
-                <a href="https://github.com/deepsarma123098/lampProject" target="_blank"><h3>Lamp Project</h3></a>
-                <p> It is an interactive website I developed using HTML, CSS, and JavaScript. The site features a unique light switch mechanism that allows users to simulate turning a light on and off. It also includes a contact form for user inquiries and a dedicated page that provides detailed descriptions of various lighting types and their applications. </p>
-            </div>
-
-            <div class="lamp item-2"  data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150">
-                <a href="https://github.com/deepsarma123098/resumeProject" target="_blank"><h3>Protfolio Clone</h3></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui earum aliquid officia, maiores doloremque amet nemo iste corrupti officiis sapiente ad similique. Similique animi ab natus incidunt architecto, consequuntur consectetur harum minima nesciunt aut. A totam quam porro cum impedit?</p>
-            </div>
-
-            <div class="lamp item-3"  data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150">
-                <a href="https://github.com/deepsarma123098/backend" target="_blank"><h3>Video Streaming App</h3></a>
-                <p> VidStream is a video-sharing platform backend developed
-                    using Node.js, Express, and MongoDB. The application allows
-                    users to upload, manage, and stream video content, with
-                    Cloudinary integrated as a cloud service for efficient media
-                    storage and delivery. It features a robust user     
-                    authentication system with JWT access tokens and refresh 
-                    tokens for secure session management. </p>
-                <!-- <div class="style">Hello</div> -->
-            </div>
-
-            <div class="lamp item-4"  data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150">
-                <a href="https://github.com/deepsarma123098/megaBlog" target="_blank"><h3>Mega Blog App</h3></a>
-                <p> The blog project is built using React The application allows
-                    users to create, view, edit, and delete blog posts     
-                    seamlessly. Redux is integrated into the project to
-                    manage the application's state efficiently, ensuring that  
-                    data flow between components is predictable and
-                    centralized. For the backend, I've utilized Appwrite, an
-                    open-source backend-as-a-service (BaaS) platform that
-                    offers a variety of tools and services.</p>
-            </div>
-
-            <div class="lamp item-5"  data-aos="flip-up" data-aos-duration="1000" data-aos-delay="150">
-                <a href="https://github.com/deepsarma123098/musicApp" target="_blank"><h3>Music App</h3></a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint sed ipsam accusantium facere veritatis, tempore iste officia atque hic rem nesciunt reprehenderit at architecto, doloremque sit voluptatem perspiciatis? Aliquam, odio.</p>
-            </div>
-            
+          <!-- Image and About Section-->
+          <div class="img-container shake-slow">
+            <img src="/images/img3.jpg" alt="Profile Photo" />
           </div>
 
-        </section>
-
-        <div class="forms">
-             
-            <div class="contact">
-                <h2>Contact Me</h2>
+          <div class="about">
+            <div class="subHeading">
+              <h2 class="animate__animated animate__flipInX animate__delay-2s">
+                About Me
+              </h2>
             </div>
 
-            <div class="formElem">
-
-                <form id="myForm">
-                    <label for="firstName">First Name</label>
-                    <input id="firstName" type="text" name="fName" value="" placeholder="Enter your first name" required minlength="2">
-                    <label for="lastName">Last Name</label>
-                    <input id="lastName" type="text" name="lName" value="" placeholder="Enter your last name">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="email" value="" placeholder="Enter your email" required>
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" type="tel" name="mobileNumber" value="" placeholder="Enter your phone name" required pattern="\d{10}">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" rows="8" cols="100" maxlength="400"></textarea>
-
-                    <div class="submitButton">
-                        <button class="submitBtn">Submit</button>
-                    </div>
-                </form>
-
+            <div class="intro">
+              <p
+                class="animate__animated animate__fadeInUpBig animate__delay-2s"
+              >
+                I graduated with a degree in Instrumentation Engineering from
+                Assam Engineering College. My career began at Assam Bio
+                Refinery, where I served as an Executive in the Instrumentation
+                department for 1 year and 7 months. During this time, I honed my
+                skills in instrumentation and gained valuable experience in the
+                bio-refinery sector. After that, I transitioned to Pride East
+                Entertainment Pvt. Ltd., taking on the role of Project
+                Coordinator. Over the course of 5 months, I managed various
+                projects, further expanding my expertise in project management
+                and coordination. Driven by a passion for technology and a
+                desire for new challenges, I decided to switch to the IT field.
+                I am now focused on building a career in tech, leveraging my
+                engineering background and newly acquired skills in software
+                development.
+              </p>
             </div>
+          </div>
 
+          <div class="button">
+            <button class="btn">
+              <a href="/docs/CV.pdf" download="CV.pdf" class="download-button">
+                Download CV
+              </a>
+            </button>
+          </div>
+        </div>
+      </section>
 
-         
+      <section class="projectDesc">
+        <div class="projectHeading">
+          <h1>My Projects</h1>
         </div>
 
-        <div class="line" >
-            <hr data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+        <div class="projects">
+          <div
+            class="lamp item-1"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+          >
+            <a
+              href="https://github.com/deepsarma123098/lampProject"
+              target="_blank"
+              ><h3>Lamp Project</h3></a
+            >
+            <p>
+              It is an interactive website I developed using HTML, CSS, and
+              JavaScript. The site features a unique light switch mechanism that
+              allows users to simulate turning a light on and off. It also
+              includes a contact form for user inquiries and a dedicated page
+              that provides detailed descriptions of various lighting types and
+              their applications.
+            </p>
+          </div>
+
+          <div
+            class="lamp item-2"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+          >
+            <a
+              href="https://github.com/deepsarma123098/resumeProject"
+              target="_blank"
+              ><h3>Protfolio Clone</h3></a
+            >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui earum
+              aliquid officia, maiores doloremque amet nemo iste corrupti
+              officiis sapiente ad similique. Similique animi ab natus incidunt
+              architecto, consequuntur consectetur harum minima nesciunt aut. A
+              totam quam porro cum impedit?
+            </p>
+          </div>
+
+          <div
+            class="lamp item-3"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+          >
+            <a href="https://github.com/deepsarma123098/backend" target="_blank"
+              ><h3>Video Streaming App</h3></a
+            >
+            <p>
+              VidStream is a video-sharing platform backend developed using
+              Node.js, Express, and MongoDB. The application allows users to
+              upload, manage, and stream video content, with Cloudinary
+              integrated as a cloud service for efficient media storage and
+              delivery. It features a robust user authentication system with JWT
+              access tokens and refresh tokens for secure session management.
+            </p>
+            <!-- <div class="style">Hello</div> -->
+          </div>
+
+          <div
+            class="lamp item-4"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+          >
+            <a
+              href="https://github.com/deepsarma123098/megaBlog"
+              target="_blank"
+              ><h3>Mega Blog App</h3></a
+            >
+            <p>
+              The blog project is built using React The application allows users
+              to create, view, edit, and delete blog posts seamlessly. Redux is
+              integrated into the project to manage the application's state
+              efficiently, ensuring that data flow between components is
+              predictable and centralized. For the backend, I've utilized
+              Appwrite, an open-source backend-as-a-service (BaaS) platform that
+              offers a variety of tools and services.
+            </p>
+          </div>
+
+          <div
+            class="lamp item-5"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+          >
+            <a
+              href="https://github.com/deepsarma123098/musicApp"
+              target="_blank"
+              ><h3>Music App</h3></a
+            >
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint sed
+              ipsam accusantium facere veritatis, tempore iste officia atque hic
+              rem nesciunt reprehenderit at architecto, doloremque sit
+              voluptatem perspiciatis? Aliquam, odio.
+            </p>
+          </div>
         </div>
-        
+      </section>
 
-<footer class="rounded-lg shadow dark:bg-gray-900 m-4">
-    <div class="w-[50vw] max-w-screen-3xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
+      <div class="forms">
+        <div class="contact">
+          <h2>Contact Me</h2>
+        </div>
 
-            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024  All Rights Reserved.</span>
+        <div class="formElem">
+          <form id="myForm">
+            <label for="firstName">First Name</label>
+            <input
+              id="firstName"
+              type="text"
+              name="fName"
+              value=""
+              placeholder="Enter your first name"
+              required
+              minlength="2"
+            />
+            <label for="lastName">Last Name</label>
+            <input
+              id="lastName"
+              type="text"
+              name="lName"
+              value=""
+              placeholder="Enter your last name"
+            />
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              value=""
+              placeholder="Enter your email"
+              required
+            />
+            <label for="phone">Phone Number</label>
+            <input
+              id="phone"
+              type="tel"
+              name="mobileNumber"
+              value=""
+              placeholder="Enter your phone name"
+              required
+              pattern="\d{10}"
+            />
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              rows="8"
+              cols="100"
+              maxlength="400"
+            ></textarea>
 
-            <ul class="flex flex-wrap items-center gap-[3vw] mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                    <a href="https://www.facebook.com/dipankar.sarma.549?mibextid=ZbWKwL" target="_blank" class="hover:underline me-4 md:me-6"><img src="/images/facebook.avif" alt="Facebook" class="w-[5vw] h-[5vw] rounded-[1.5vw]"></a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6"><img src="/images/instagram.avif" alt="Instagram" class="w-[5vw] h-[5vw] rounded-[1.5vw]"></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/dipankar-sarma-280a53169" class="hover:underline me-4 md:me-6"><img src="/images/linkedIn.avif" alt="LinkedIn" class="w-[5vw] h-[5vw] rounded-[1.5vw]"></a>
-                </li>
-                <!-- <li>
+            <div class="submitButton">
+              <button class="submitBtn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="line">
+        <hr
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        />
+      </div>
+
+      <footer class="rounded-lg shadow dark:bg-gray-900 m-4">
+        <div class="w-[50vw] max-w-screen-3xl mx-auto p-4 md:py-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <span
+              class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+              >© 2024 All Rights Reserved.</span
+            >
+
+            <ul
+              class="flex flex-wrap items-center gap-[3vw] mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+            >
+              <li>
+                <a
+                  href="https://www.facebook.com/dipankar.sarma.549?mibextid=ZbWKwL"
+                  target="_blank"
+                  class="hover:underline me-4 md:me-6"
+                  ><img
+                    src="/images/facebook.avif"
+                    alt="Facebook"
+                    class="w-[5vw] h-[5vw] rounded-[1.5vw]"
+                /></a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline me-4 md:me-6"
+                  ><img
+                    src="/images/instagram.avif"
+                    alt="Instagram"
+                    class="w-[5vw] h-[5vw] rounded-[1.5vw]"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/dipankar-sarma-280a53169"
+                  class="hover:underline me-4 md:me-6"
+                  ><img
+                    src="/images/linkedIn.avif"
+                    alt="LinkedIn"
+                    class="w-[5vw] h-[5vw] rounded-[1.5vw]"
+                /></a>
+              </li>
+              <!-- <li>
                     <a href="#" class="hover:underline">Github</a>
                 </li> -->
             </ul>
+          </div>
+          <!-- <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> -->
         </div>
-        <!-- <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> -->
-      
-    </div>
-</footer>
-
-
-
+      </footer>
     </div>
 
+    //GSAP
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    //AOS
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    //EmailJS
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "rJFgLZi2W-7kj-2yl",
+        });
+      })();
+    </script>
+
+    //JS Script
     <script src="/javascript/script.js"></script>
-</body>
+  </body>
 </html>
