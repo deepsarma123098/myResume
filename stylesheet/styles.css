@@ -31,11 +31,25 @@ body::-webkit-scrollbar {
     margin: 0 1.8rem;
 }
 
-.navbar .heading h1{
+
+.navbar .heading a{
+text-decoration: none;
+}
+.navbar .heading a h1{
     font-size: 30px;
     font-style: oblique;
     font-weight: 700;
 }
+
+.navbar .heading a>h1{
+    cursor: pointer;
+}
+
+.navbar .heading a>h1:hover{
+    color: #F95911;
+    box-shadow: 0 2px silver;
+}
+
 
 #navList ul{
     /* background-color: orange; */
@@ -101,7 +115,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
 }
 
-.about .heading h2{
+.about .subHeading h2{
     font-size: 24px;
 }
 
@@ -281,6 +295,7 @@ margin: 0.5rem 0;
 
 textarea{
     resize: none;
+    padding: 1rem 2rem !important;
 }
 
 .formElem form>label::after{
@@ -292,11 +307,21 @@ textarea{
 
 }
 
+.formElem form > label[for="lastName"]::after {
+    content: none;
+}
+
+
+.formElem form > label[for="message"]::after {
+    content: none;
+}
+
 
 
 .submitButton{
    position: relative;
-   left: 47.5rem;
+   left: 23rem;
+   margin-top: 0.7rem;
 }
 
 .submitBtn{

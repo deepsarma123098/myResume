@@ -31,7 +31,7 @@
             <nav class="navbar">
                 
                 <div class="heading">
-                    <h1>My Protfolio</h1>
+                    <a href="/"><h1>My Protfolio</h1></a>
                 </div>
 
                 <div id="navList">
@@ -76,7 +76,7 @@
     
                 <div class="about">
                     
-                    <div class="heading">
+                    <div class="subHeading">
                             <h2 class="animate__animated animate__flipInX animate__delay-2s">About Me</h2>
                     </div>
     
@@ -161,23 +161,27 @@
 
             <div class="formElem">
 
-                <form >
+                <form id="myForm">
                     <label for="firstName">First Name</label>
-                    <input id="firstName" type="text" name="fName" value="" placeholder="Enter your first name">
+                    <input id="firstName" type="text" name="fName" value="" placeholder="Enter your first name" required minlength="2">
                     <label for="lastName">Last Name</label>
                     <input id="lastName" type="text" name="lName" value="" placeholder="Enter your last name">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" value="" placeholder="Enter your email" required>
                     <label for="phone">Phone Number</label>
-                    <input id="phone" type="tel" name="mobileNumber" value="" placeholder="Enter your phone name">
+                    <input id="phone" type="tel" name="mobileNumber" value="" placeholder="Enter your phone name" required pattern="\d{10}">
                     <label for="message">Your Message</label>
                     <textarea id="message" rows="8" cols="100" maxlength="400"></textarea>
+
+                    <div class="submitButton">
+                        <button class="submitBtn">Submit</button>
+                    </div>
                 </form>
 
             </div>
 
 
-            <div class="submitButton">
-                <button class="submitBtn">Submit</button>
-            </div>
+         
         </div>
 
         <div class="line" >
@@ -185,21 +189,21 @@
         </div>
         
 
-<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-    <div class="w-full max-w-screen-3xl mx-auto p-4 md:py-8">
+<footer class="rounded-lg shadow dark:bg-gray-900 m-4">
+    <div class="w-[50vw] max-w-screen-3xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
 
             <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024  All Rights Reserved.</span>
 
-            <ul class="flex flex-wrap items-center gap-[1vw] mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <ul class="flex flex-wrap items-center gap-[3vw] mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6"><img src="/images/facebook3d.avif" alt="Facebook" class="w-[6vw] h-[6vw] rounded-[1.5vw]"></a>
+                    <a href="https://www.facebook.com/dipankar.sarma.549?mibextid=ZbWKwL" target="_blank" class="hover:underline me-4 md:me-6"><img src="/images/facebook.avif" alt="Facebook" class="w-[5vw] h-[5vw] rounded-[1.5vw]"></a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6"><img src="/images/instagram.avif" alt="Instagram" class="w-[6vw] h-[6vw] rounded-[1.5vw]"></a>
+                    <a href="#" class="hover:underline me-4 md:me-6"><img src="/images/instagram.avif" alt="Instagram" class="w-[5vw] h-[5vw] rounded-[1.5vw]"></a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6"><img src="/images/linkedIn.avif" alt="LinkedIn" class="w-[6vw] h-[6vw] rounded-[1.5vw]"></a>
+                    <a href="https://www.linkedin.com/in/dipankar-sarma-280a53169" class="hover:underline me-4 md:me-6"><img src="/images/linkedIn.avif" alt="LinkedIn" class="w-[5vw] h-[5vw] rounded-[1.5vw]"></a>
                 </li>
                 <!-- <li>
                     <a href="#" class="hover:underline">Github</a>
