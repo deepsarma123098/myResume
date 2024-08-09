@@ -138,6 +138,8 @@ If you want to center the .button div within its container, you can adjust the w
     text-decoration: none;
 }
 
+
+
 .button .btn a:hover{
     
     background-color: rgba(0, 217, 255, 0.338);
@@ -239,9 +241,7 @@ margin: 0.5rem 0;
     /* background-color: red; */
     color: #2C2933;;
 }
-textarea{
-    resize: none;
-}
+
 
 .contact h2{
     margin-top: 1rem;
@@ -250,6 +250,10 @@ textarea{
     text-align: center;
 }
 
+.formElem{
+    position: relative;
+    left: 25rem;
+}
 
 .forms{
     margin: 3rem 3rem;
@@ -275,6 +279,49 @@ textarea{
    border-radius: 1vw;
 }
 
+textarea{
+    resize: none;
+}
+
+.formElem form>label::after{
+
+    content: " *";
+    color: rgba(226, 23, 23, 0.76); 
+    font-size: 1.2rem;
+    font-weight: 600; 
+
+}
+
+
+
+.submitButton{
+   position: relative;
+   left: 47.5rem;
+}
+
+.submitBtn{
+  
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid gray;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.submitBtn:hover{
+    background-color: rgba(202, 245, 202, 0.648);
+    cursor: pointer;
+}
+
+
+.line{
+    display: inline-block;
+    width: 85%;
+    margin: 0 7rem;
+    height: 3vw;
+}
 .foot{
     padding: 5rem 3rem;;
     display: flex;
