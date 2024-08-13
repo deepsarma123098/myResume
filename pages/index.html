@@ -28,18 +28,19 @@
   </head>
   <body>
     <div id="main">
+
       <header class="navElem">
         <!-- Navbar starts here -->
         <nav class="navbar">
-          <div class="heading">
-            <a href="/"><h1>My Protfolio</h1></a>
+          <div id="home" class="heading">
+            <a href="#home"><h1>My Protfolio</h1></a>
           </div>
 
           <div id="navList">
             <ul>
-              <a href=""><li>Home</li></a>
-              <a href=""><li>My Projects</li></a>
-              <a href=""><li>Contact Me</li></a>
+              <li id="home-list"><a href="#home">Home</a></li>
+              <li id="projects-list"><a href="#projects">My Projects</a></li>
+              <li id="contact-list"><a href="#contact">Contact Me</a></li>
             </ul>
           </div>
         </nav>
@@ -48,23 +49,8 @@
 
       <section class="desc">
         <div class="container">
-          <!-- Light Beam -->
+       
 
-          <!-- <div class="wrapper">
-
-                    <div class="lights-wrapper">
-                      <div class="light light--1 js-light--1">
-                    
-                  
-                      <div class="light light--2 js-light--2">
-                        <div class="light__beam light__beam--2 js-light__beam--2">
-                          <div class="light__trail"></div>
-                          <div class="light__spot"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                   -->
           <!-- Image and About Section-->
           <div class="img-container shake-slow">
             <img src="/images/img3.jpg" alt="Profile Photo" />
@@ -101,7 +87,7 @@
 
           <div class="button">
             <button class="btn">
-              <a href="/docs/CV.pdf" download="CV.pdf" class="download-button">
+              <a href="/docs/CVDipankar.pdf" download="CV.pdf" class="download-button">
                 Download CV
               </a>
             </button>
@@ -109,7 +95,7 @@
         </div>
       </section>
 
-      <section class="projectDesc">
+      <section id="projects" class="projectDesc">
         <div class="projectHeading">
           <h1>My Projects</h1>
         </div>
@@ -210,16 +196,16 @@
               ><h3>Music App</h3></a
             >
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint sed
-              ipsam accusantium facere veritatis, tempore iste officia atque hic
-              rem nesciunt reprehenderit at architecto, doloremque sit
-              voluptatem perspiciatis? Aliquam, odio.
+              This music app is built using Next.js. The project is focused
+              entirely on the frontend, providing users with an intuitive
+              and engaging interface. The app features a sleek and
+              modern design, with a user-friendly interface.
             </p>
           </div>
         </div>
       </section>
 
-      <div class="forms">
+      <div id="contact" class="forms">
         <div class="contact">
           <h2>Contact Me</h2>
         </div>
@@ -310,6 +296,7 @@
               </li>
               <li>
                 <a href="#" class="hover:underline me-4 md:me-6"
+                target="_blank"
                   ><img
                     src="/images/instagram.avif"
                     alt="Instagram"
@@ -320,6 +307,7 @@
                 <a
                   href="https://www.linkedin.com/in/dipankar-sarma-280a53169"
                   class="hover:underline me-4 md:me-6"
+                  target="_blank"
                   ><img
                     src="/images/linkedIn.avif"
                     alt="LinkedIn"
@@ -336,13 +324,13 @@
       </footer>
     </div>
 
-    //GSAP
+    <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-    //AOS
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    //EmailJS
+    <!-- EmailJS -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
@@ -355,7 +343,7 @@
       })();
     </script>
 
-    //JS Script
+    <!-- JS Script -->
     <script src="/javascript/script.js"></script>
   </body>
 </html>
