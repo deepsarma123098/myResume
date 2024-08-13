@@ -98,16 +98,24 @@ text-decoration: none;
     color: #F95911 !important;
 }
 
+.barImg img{
+    width: 2.3vw;
+    height: auto;
+    display: none;
+}
 
 .desc{
     width: 100%;
-    height: 90vh;
+    max-width: 80%;
+    height: 80vh;
+    
 }
 
 .container{
     /* background-color: beige; */
     margin: 3rem;
     height: 40vw;
+    
 }
 
 .container > div {
@@ -120,12 +128,13 @@ text-decoration: none;
   }
 
 .img-container{
-    width: 14vw;
-    height: 14vw;
+    width: 18vw;
+    height: auto;
     border: 2px solid gray;
     border-radius: 50%;
     box-shadow: -4px 2px 15px 5px rgba(151, 150, 150, 0.5);
     overflow: hidden;
+    margin-left: 2vw;
 }
 
 .img-container:hover{
@@ -142,30 +151,48 @@ text-decoration: none;
 
 .about {
     
-    width: 100%;
+    position: relative;
+    left: 18vw;
+    bottom:8vw;
+    width: 60vw;
+    min-width: 60%;
     display: flex;
     justify-content: start;
-    margin: 0 2.8rem;
+    margin: 0 auto;
     /* align-items: center; */
     flex-direction: column;
+    /* outline: 3px solid silver;
+    outline-offset: 25px;
+    border: 3px solid silver;
+    border-radius: 30px; */
+    box-sizing: border-box; 
 }
 
+
 .about .subHeading h2{
+
     font-size: 24px;
+    font-weight: 900;
 }
 
 .intro p{
     font-size: 20px;
     padding: 8px 6px;
+    max-width: 60vw;
+    /* background-color: azure; */
     /* transition:  2s ease-in-out; */
 }
 
 .button {
     /* background-color: aliceblue; */
+    position: relative;
+    left: 17vw;
+    bottom:9.4vw;
     width: 15%; /* Set to less than 100% */
     margin: 0 auto; /* This will center the div horizontally */
+    
   }
-
+  
   /* The margin: auto; property is typically used to center block-level elements (like divs) horizontally within their container. However, for margin: auto; to work for centering, two conditions need to be met:
 
 1.The element must have a defined width less than 100%.
@@ -181,11 +208,33 @@ If you want to center the .button div within its container, you can adjust the w
     font-size: 18px;
     font-weight: 600;
     background-color: whitesmoke;
-    border: 1px solid black;
+    /* border: 1px solid rgb(231, 6, 6); */
     border-radius: 50px;
     color: black;
     text-decoration: none;
+    /* transition: all ease 0.4s; */
 }
+
+/* .button .btn a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    translate: -50% -50%;
+    left: 50%;
+    right: 50%;
+    z-index: -1;
+    padding: 10px;
+    background: conic-gradient(
+        form 0deg,
+        #ff5f6d,
+        #1e90ff,
+        #9370db,
+    );
+} */
+   
+
+
 
 
 
@@ -244,7 +293,7 @@ margin: 0.5rem 0;
 
 .lamp:hover{
     cursor: pointer;
-    border: 2px solide gray;
+    border: 2px solid gray;
     box-shadow: -2px 4px 5px 5px rgba(151, 150, 150, 0.5);;
 }
 
@@ -357,7 +406,7 @@ textarea{
 
 .submitButton{
    position: relative;
-   left: 23rem;
+   left: 21rem;
    margin-top: 0.7rem;
 }
 
@@ -367,9 +416,13 @@ textarea{
     color: black;
     border: 2px solid gray;
     border-radius: 50px;
-    padding: 0.5rem 1.5rem;
+    padding: 0.8rem 4rem;
     font-size: 20px;
     font-weight: 600;
+    transition: all ease 0.4s;
+}
+.submitBtn:active{
+    scale: 0.8;
 }
 
 .submitBtn:hover{
@@ -388,4 +441,90 @@ textarea{
     padding: 5rem 3rem;;
     display: flex;
     gap: 2rem;
+}
+
+
+
+
+
+/* RESPONSIVE CODE */
+
+/* :root {
+    --breakpoint-mobile: 500px;
+    --breakpoint-tablet: 768px;
+} */
+
+
+@media only screen and (max-width: 500px) {
+
+    body,html{
+        /* background-color: green; */
+        scroll-behavior: smooth;
+    }
+
+    
+    .navbar {
+        flex-direction: column; 
+        align-items: center;
+        margin: 0;
+    }
+
+    .navbar .heading a h1 {
+        font-size: 24px; 
+        text-align: center;
+        margin: 0.5rem 0; 
+    }
+
+    .barImg img {
+        display: block;
+        width: 30px; 
+        height: auto;
+        margin-top: 1rem; 
+    }
+
+    #navList {
+        display: none;
+    }
+
+       
+       .about {
+        width: 100%;
+        margin: 1rem 3rem; 
+        left: 4.5rem;
+        bottom: 0;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-container {
+        width: 60%; 
+        margin-left: 30vw; /* Remove margin-left */
+        margin-bottom: 1rem; /* Add margin for spacing */
+    }
+
+    .button {
+        width: 80%; /* Adjust button width for mobile view */
+        margin: 1rem 7rem; /* Center horizontally */
+        background-color: red;
+    }
+
+    .formElem {
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .forms {
+        margin: 1rem;
+    }
+
+    .formElem form input, textarea {
+        width: 90vw; /* Adjust width for mobile view */
+    }
+
+    .submitButton {
+        left: 0;
+        margin: 1rem auto; /* Center button */
+    }
+
 }
