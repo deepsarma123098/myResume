@@ -146,6 +146,14 @@ document.addEventListener('DOMContentLoaded', () => {
         form.reset();
     
     })
+
+
+    const currentYear = new Date().getFullYear();
+
+    const copyrightMessage =  document.querySelector('.copyright')
+
+    copyrightMessage.innerHTML = `© ${currentYear} All Rights Reserved.`
+
 })
 
 
