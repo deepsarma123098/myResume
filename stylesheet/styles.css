@@ -95,11 +95,6 @@ text-decoration: none;
 
 }
 
-#navList ul li a:focus {
-    outline: none;
-    color: inherit; /* Prevents color change on focus */
-    background-color: inherit; /* Prevents background color change on focus */
-}
 
 .desc{
     width: 100%;
@@ -128,6 +123,11 @@ text-decoration: none;
     border-radius: 50%;
     box-shadow: -4px 2px 15px 5px rgba(151, 150, 150, 0.5);
     overflow: hidden;
+}
+
+.img-container:hover{
+
+    box-shadow:-4px 2px 15px 5px rgba(151, 150, 150, 0.5), 4px -2px 15px rgba(151, 150, 150, 0.5)
 }
 
 .img-container img{
