@@ -499,13 +499,13 @@ textarea{
 
     .img-container {
         width: 60%; 
-        margin-left: 30vw; /* Remove margin-left */
-        margin-bottom: 1rem; /* Add margin for spacing */
+        margin-left: 30vw; 
+        margin-bottom: 1rem; 
     }
 
     .button {
-        width: 80%; /* Adjust button width for mobile view */
-        margin: 1rem 7rem; /* Center horizontally */
+        width: 80%; 
+        margin: 1rem 7rem; 
         background-color: red;
     }
 
@@ -519,12 +519,12 @@ textarea{
     }
 
     .formElem form input, textarea {
-        width: 90vw; /* Adjust width for mobile view */
+        width: 90vw; 
     }
 
     .submitButton {
         left: 0;
-        margin: 1rem auto; /* Center button */
+        margin: 1rem auto; 
     }
 
 }
