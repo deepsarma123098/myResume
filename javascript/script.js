@@ -83,9 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
          const scrollPosition = window.scrollY + window.innerHeight / 1.5;
 
 
-         console.log("Scroll Position:", scrollPosition);
-         console.log("Projects Offset:", projectsSection.offsetTop);
-         console.log("Contact Offset:", contactSection.offsetTop);
+        //  console.log("Scroll Position:", scrollPosition);
+        //  console.log("Projects Offset:", projectsSection.offsetTop);
+        //  console.log("Contact Offset:", contactSection.offsetTop);
  
          if (scrollPosition >= descSection.offsetTop && scrollPosition < projectsSection.offsetTop) {
              // In .desc section
