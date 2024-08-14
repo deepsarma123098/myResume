@@ -154,6 +154,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     copyrightMessage.innerHTML = `© ${currentYear} All Rights Reserved.`
 
+
+
+
+    //
+
+    // document.querySelector('.btn').addEventListener('click', ()=> {
+
+    //     const anchorElement = document.createElement('a');
+
+       
+    //     anchorElement.href = "/docs/CVDipankar.pdf";
+    //     // anchorElement.download = "CV.pdf";
+    //     anchorElement.textContent = "Download CV";
+        
+    //     const buttonElement = document.querySelector('.btn');
+       
+    //     buttonElement.appendChild(anchorElement);
+        
+    // })
 })
 
 
