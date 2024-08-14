@@ -248,6 +248,7 @@ If you want to center the .button div within its container, you can adjust the w
     background-size: 400% 400%;
     z-index: -1;
     animation: moveBorder 4s linear infinite;
+    animation-delay: 2s;
     pointer-events: none;
 }
 
