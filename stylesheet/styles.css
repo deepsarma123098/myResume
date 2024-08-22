@@ -217,8 +217,8 @@ If you want to center the .button div within its container, you can adjust the w
     display: inline-block;
     width: 100%;
     padding: 1rem 1rem;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     background-color: whitesmoke;
     border-radius: 50px;
     color: black;
@@ -257,6 +257,7 @@ If you want to center the .button div within its container, you can adjust the w
     color: black;
     text-decoration: none; 
     border-radius: 50px;
+
 }
    
 
@@ -393,7 +394,7 @@ margin: 0.5rem 0;
 
 
 .contact h2{
-    margin-top: 1rem;
+    /* margin-top: 0.5rem; */
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -538,6 +539,7 @@ textarea{
     #navList {
         display: none;
     }
+
 
        
        .about {

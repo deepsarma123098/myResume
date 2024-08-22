@@ -148,6 +148,37 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
+    //Form Debouncing
+
+    const inputElem = document.querySelector('input')
+
+
+    const debounce = (func, delay)=> {
+         
+        let timerId;
+
+        return (...args)=>{
+
+            clearTimeout(timerId)
+            timerId = setTimeout(()=> {
+                func(...args);
+           },delay)
+        }
+              
+    }
+
+    const callApi = (e)=> {
+       console.log(e.target.value);
+       
+    }
+
+    const debounceApi = debounce(callApi, 500)
+
+    inputElem.addEventListener('input', debounceApi)
+
+
+    //Date object is added
+
     const currentYear = new Date().getFullYear();
 
     const copyrightMessage =  document.querySelector('.copyright')
